@@ -7,8 +7,8 @@ export default function Contact() {
             <div className='w-full px-4'>
                 <div className='max-w-xl mx-auto text-center mb-16'>
                     <h4 className='font-bold uppercase text-primary text-lg mb-3'>Kontak</h4>
-                    <h2 className='font-bold text-dark text-3xl mb-4'>Hubungi Kami</h2>
-                    <p className='font-medium text-base text-secondary'>lorem ipsum dolor sit amet consectetur adipising elit. Id temporibus maiores sequi vitae sarpe iusto delenit!</p>
+                    <h2 className='font-bold text-dark text-3xl mb-4'>Hubungi Saya</h2>
+                    <p className='font-medium text-base text-secondary'>Silahkan isi form di bawah ini jika anda ingin mengirim pesan kepada saya</p>
                 </div>
             </div>
 

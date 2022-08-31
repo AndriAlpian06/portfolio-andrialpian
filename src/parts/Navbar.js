@@ -1,6 +1,6 @@
-import React, { Fragment, useState } from 'react'
+import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { Link } from "react-router-dom"
+import { Link } from 'react-scroll';
 
 import '../css/Navbar.css'
 
@@ -39,16 +39,19 @@ const Navbar = () => {
             </div>
             <ul className={click ? "nav-menu active" : "nav-menu"}>
                 <li className='nav-item'>
-                    <Link to="/" onClick={closeMenu}>Beranda</Link>
+                    <Link to="Navbar" onClick={closeMenu}>Beranda</Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to='/about' onClick={closeMenu}>Tentang Saya</Link>
+                    <Link to='about' onClick={closeMenu}>Tentang Saya</Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to='/our_program' onClick={closeMenu}>Portfolio</Link>
+                    <Link to='skills' onClick={closeMenu}>Keahlian</Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to='/our_program' onClick={closeMenu}>Kontak</Link>
+                    <Link to='portfolio' onClick={closeMenu}>Portfolio</Link>
+                </li>
+                <li className='nav-item'>
+                    <Link to='contact' onClick={closeMenu}>Kontak</Link>
                 </li>
             </ul>
         </nav>

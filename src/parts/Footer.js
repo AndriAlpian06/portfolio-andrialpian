@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-scroll';
 
 export default function Footer() {
   return (
@@ -6,11 +7,11 @@ export default function Footer() {
         <div className='container'>
             <div className='flex flex-wrap'>
                 <div className='w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3'>
-                    <h2 className='font-bold text-4xl text-white mb-5'>WPU</h2>
+                    <h2 className='font-bold text-4xl text-white mb-5'>andrialpian</h2>
                     <h3 className='font-bold text-2xl mb-2'>Hubungi Saya</h3>
-                    <p>ismeandrialpian@gmail.com</p>
-                    <p>Kp Bojong Rt 01/01</p>
-                    <p>Bogor</p>
+                    <p className='mb-3'>ismeandrialpian@gmail.com</p>
+                    <p className='mb-3'>Kp Bojong Rt 01/01</p>
+                    <p className='mb-3'>Bogor</p>
                 </div>
                 <div className='w-full px-4 mb-12 md:w-1/3'>
                     <h3 className='font-semibold text-xl text-white mb-5'>Kategori Tulisan</h3>
@@ -30,16 +31,16 @@ export default function Footer() {
                     <h3 className='font-semibold text-xl text-white mb-5'>Tautan</h3>
                     <ul className='text-slate-300'>
                         <li>
-                            <a href='#' className='inline-block text-base hover:text-primary mb-3'>Beranda</a>
+                            <Link to='#' className='inline-block text-base hover:text-primary mb-3'>Beranda</Link>
                         </li>
                         <li>
-                            <a href='#' className='inline-block text-base hover:text-primary mb-3'>Tentang Saya</a>
+                            <Link to='about' className='inline-block text-base hover:text-primary mb-3'>Tentang Saya</Link>
                         </li>
                         <li>
-                            <a href='#' className='inline-block text-base hover:text-primary mb-3'>Portfolio</a>
+                            <Link to='portfolio' className='inline-block text-base hover:text-primary mb-3'>Portfolio</Link>
                         </li>
                         <li>
-                            <a href='#' className='inline-block text-base hover:text-primary mb-3'>Kontak</a>
+                            <Link to='contact' className='inline-block text-base hover:text-primary mb-3'>Kontak</Link>
                         </li>
                     </ul>
                 </div>

@@ -8,6 +8,7 @@ import { Router, Routes, Route } from 'react-router-dom'
 import Portfolio from './parts/Portfolio';
 import Contact from './parts/Contact';
 import Footer from './parts/Footer';
+import Skills from './parts/Skills';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Navbar />
         <Hero />
         <About />
+        <Skills />
         <Portfolio />
         <Contact />
         <Footer />

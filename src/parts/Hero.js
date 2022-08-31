@@ -1,5 +1,6 @@
 import React from 'react'
 import profile from '../images/profile.png'
+import cvandri from '../cv-andrialpian.png'
 
 export default function Hero() {
   return (
@@ -11,7 +12,7 @@ export default function Hero() {
               <h2 className='font-medium text-dark text-lg mb-5 lg:text-2xl'>Engineer Chatbot & <span className='text-slate-500'>Web Developer</span></h2>
               <p className='font-medium text-secondary mb-10 leading-relaxed'>saya bekerja di perusahaan swasta dengan posisi sebagai <span className='text-dark'>Engineer Chatbot</span></p>
 
-              <a href="#" className='text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:bg-sky-400 transition duration-300 ease-in-out'>Hubungi Saya</a>
+              <a href={cvandri} target='_blank' className='text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:bg-sky-400 transition duration-300 ease-in-out'>Download CV</a>
           </div>
           <div className='w-full self-end px-4 lg:w-1/2'>
             <div className='relative mt-10 lg:mt-9 lg:right-0'>
