@@ -12,7 +12,7 @@ export default function Contact() {
                 </div>
             </div>
 
-            <form>
+            <form action='https://getform.io/f/dc0f682a-fb98-4a3d-95ef-ae8969de9a19' method='POST'>
                 <div className='w-full lg:w-2/3 lg:mx-auto'>
                     <div className='w-full px-4 mb-8'>
                         <label className='text-base font-bold text-primary'>Nama</label>
@@ -24,7 +24,7 @@ export default function Contact() {
                     </div>
                     <div className='w-full px-4 mb-8'>
                         <label className='text-base font-bold text-primary'>Pesan</label>
-                        <textarea id="email" type="text" className='w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32'></textarea>
+                        <textarea id="pesan" type="text" name='message' className='w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32'></textarea>
                     </div>
                     <div className="w-full px-4">
                         <button className='text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500'>

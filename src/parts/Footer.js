@@ -31,16 +31,19 @@ export default function Footer() {
                     <h3 className='font-semibold text-xl text-white mb-5'>Tautan</h3>
                     <ul className='text-slate-300'>
                         <li>
-                            <Link to='#' className='inline-block text-base hover:text-primary mb-3'>Beranda</Link>
+                            <Link to='Navbar' spy={true} smooth={true} duration={500} className='inline-block text-base hover:text-primary mb-3'>Beranda</Link>
                         </li>
                         <li>
-                            <Link to='about' className='inline-block text-base hover:text-primary mb-3'>Tentang Saya</Link>
+                            <Link to='about' spy={true} smooth={true} duration={500} className='inline-block text-base hover:text-primary mb-3'>Tentang Saya</Link>
                         </li>
                         <li>
-                            <Link to='portfolio' className='inline-block text-base hover:text-primary mb-3'>Portfolio</Link>
+                            <Link to='about' spy={true} smooth={true} duration={500} className='inline-block text-base hover:text-primary mb-3'>Keahlian</Link>
                         </li>
                         <li>
-                            <Link to='contact' className='inline-block text-base hover:text-primary mb-3'>Kontak</Link>
+                            <Link to='portfolio' spy={true} smooth={true} duration={500} className='inline-block text-base hover:text-primary mb-3'>Portfolio</Link>
+                        </li>
+                        <li>
+                            <Link to='contact' spy={true} smooth={true} duration={500} className='inline-block text-base hover:text-primary mb-3'>Kontak</Link>
                         </li>
                     </ul>
                 </div>

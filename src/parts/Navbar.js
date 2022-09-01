@@ -39,19 +39,19 @@ const Navbar = () => {
             </div>
             <ul className={click ? "nav-menu active" : "nav-menu"}>
                 <li className='nav-item'>
-                    <Link to="Navbar" onClick={closeMenu}>Beranda</Link>
+                    <Link to="Navbar" smooth={true} duration={500} onClick={closeMenu}>Beranda</Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to='about' onClick={closeMenu}>Tentang Saya</Link>
+                    <Link to='about' spy={true} smooth={true} duration={500} onClick={closeMenu}>Tentang Saya</Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to='skills' onClick={closeMenu}>Keahlian</Link>
+                    <Link to='skills' spy={true} smooth={true} duration={500} onClick={closeMenu}>Keahlian</Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to='portfolio' onClick={closeMenu}>Portfolio</Link>
+                    <Link to='portfolio' spy={true} smooth={true} duration={500} onClick={closeMenu}>Portfolio</Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to='contact' onClick={closeMenu}>Kontak</Link>
+                    <Link to='contact' spy={true} smooth={true} duration={500} onClick={closeMenu}>Kontak</Link>
                 </li>
             </ul>
         </nav>

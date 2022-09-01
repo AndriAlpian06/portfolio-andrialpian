@@ -9,6 +9,7 @@ import Portfolio from './parts/Portfolio';
 import Contact from './parts/Contact';
 import Footer from './parts/Footer';
 import Skills from './parts/Skills';
+import BackToTopButton from './parts/BackToTop';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Portfolio />
         <Contact />
         <Footer />
+        <BackToTopButton />
     </div>
   );
 }

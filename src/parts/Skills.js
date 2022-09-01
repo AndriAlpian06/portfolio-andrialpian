@@ -15,7 +15,7 @@ export default function Skills() {
     <div name='skills' className='w-full h-screen bg-dark text-white pt-12'>
       {/* Container */}
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
-          <div className='max-w-xl mx-auto text-center mt-12'>
+          <div className='max-w-xl mx-auto text-center'>
               <p className='font-bold uppercase text-primary text-lg inline border-b-4 border-pink-600'>Skills</p>
               <p className='py-4 font-medium text-base text-secondary'>// Ini adalah teknologi yang pernah saya kerjakan</p>
           </div>
