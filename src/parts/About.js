@@ -5,12 +5,12 @@ export default function About() {
     <section id="about" className='pt-36 pb-32'>
         <div className='container'>
             <div className='flex flex-wrap'>
-                <div className='w-full px-4 mb-10 lg:w-1/2'>
+                <div className='w-full px-4 mb-10 lg:w-1/1'>
                     <h4 className='font-bold uppercase text-primary text-lg mb-3'>Tentang Saya</h4>
                     <h2 className='font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl'>Hallo, nama saya Andri Alpian</h2>
                     <p className='font-medium text-base text-secondary max-w-xl lg:text-lg'>Sangat termotivasi untuk terus mengembangkan keterampilan saya dan tumbuh secara profesional. Saya yakin dengan kemampuan saya untuk menghasilkan ide-ide menarik untuk chatbot dan web delevoper.</p>
                 </div>
-                <div className='w-full px-4 lg:w-1/2'>
+                <div className='w-full px-4 lg:w-1/1'>
                     <h3 className='font-bold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10'>Mari Berteman</h3>
                     <p className='font-medium text-base text-secondary mb-6 lg:text-lg'>berikut akun media sosial di mulai dari instagram, facebook, twitter, linkedln dan github, silahkan di follow ya...</p>
                         <div className='flex items-center'>

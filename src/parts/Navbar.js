@@ -39,7 +39,7 @@ const Navbar = () => {
             </div>
             <ul className={click ? "nav-menu active" : "nav-menu"}>
                 <li className='nav-item'>
-                    <Link to="Navbar" smooth={true} duration={500} onClick={closeMenu}>Beranda</Link>
+                    <Link to="hero" smooth={true} duration={500} onClick={closeMenu}>Beranda</Link>
                 </li>
                 <li className='nav-item'>
                     <Link to='about' spy={true} smooth={true} duration={500} onClick={closeMenu}>Tentang Saya</Link>

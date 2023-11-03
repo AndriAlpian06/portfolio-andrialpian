@@ -1,6 +1,7 @@
 import React from 'react'
 import profile from '../images/profile.png'
 import cvandri from '../cv-andrialpian.png'
+import AutoTyping, { BlinkCursor } from 'react-auto-typing'
 
 export default function Hero() {
   return (
@@ -8,7 +9,21 @@ export default function Hero() {
       <div className='container'>
         <div className='flex flex-wrap'>
           <div className='w-full self-center px-4 lg:w-1/2'>
-            <h1 className='text-base font-bold text-primary md:text-xl'>Hallo Semua, Perkenalkan Saya <span className='block font-bold text-4xl text-dark'>Andri Alpian</span></h1>
+            <h1 className='text-base font-bold text-primary md:text-xl'>
+              <AutoTyping
+                active // <boolean>
+                textRef='Hallo Semua, Perkenalkan Saya' // <string>
+                writespeed={150} // <number>
+                deletespeed={150} // <number>
+                delayToWrite={1000} // <number>
+                delayToDelete={2000} // <number>
+              />
+              <BlinkCursor
+                active // <boolean>
+                blinkSpeed={500} // <number>
+              />
+              <span className='block font-bold text-4xl text-dark'>Andri Alpian</span>
+            </h1>
               <h2 className='font-medium text-dark text-lg mb-5 lg:text-2xl'>Engineer Chatbot & <span className='text-slate-500'>Web Developer</span></h2>
               <p className='font-medium text-secondary mb-10 leading-relaxed'>saya bekerja di perusahaan swasta dengan posisi sebagai <span className='text-dark'>Engineer Chatbot</span></p>
 
