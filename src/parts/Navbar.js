@@ -37,7 +37,7 @@ const Navbar = () => {
                 {click ? (<FaTimes size={30} style={{ color: '#0f172a'}} />)
                     : (<FaBars size={30} style={{ color: '#0f172a'}}/>)}
             </div>
-            <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <ul className={click ? "nav-menu active" : "nav-menu cursor-pointer"}>
                 <li className='nav-item'>
                     <Link to="hero" smooth={true} duration={500} onClick={closeMenu}>Beranda</Link>
                 </li>

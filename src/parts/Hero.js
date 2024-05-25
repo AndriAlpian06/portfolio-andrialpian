@@ -1,5 +1,5 @@
 import React from 'react'
-import profile from '../images/profile.png'
+import profile from '../images/pp-2.png'
 import cvandri from '../cv-andrialpian.png'
 import cvandripdf from '../cv-andrialpian.pdf'
 import AutoTyping, { BlinkCursor } from 'react-auto-typing'
@@ -34,7 +34,7 @@ export default function Hero() {
             <div className='relative mt-10 lg:mt-9 lg:right-0'>
               <img src={profile} alt="Andri Alpian" className='max-w-full mx-auto' />
               <span className='absolute -bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-125'>
-                <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <svg width="400" height="350" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#38BDF8" d="M48,-15.2C56.2,9.4,52.4,38.2,33,54.5C13.5,70.9,-21.8,74.7,-43.5,59.1C-65.3,43.5,-73.5,8.5,-64,-18C-54.5,-44.6,-27.2,-62.6,-3.6,-61.4C20,-60.2,39.9,-39.8,48,-15.2Z" transform="translate(100 100) scale(1.1)" />
                 </svg>
               </span>

@@ -33,7 +33,7 @@ function BackToTopButton () {
         fontSize: '50px'
         }}
         onClick={scrollUp}
-        className="bg-primary rounded-md"><AiOutlineUp className='w-6 h-6 mx-auto'/>
+        className="bg-primary rounded-md text-white"><AiOutlineUp className='w-6 h-6 mx-auto'/>
         </button>
         )
         }
