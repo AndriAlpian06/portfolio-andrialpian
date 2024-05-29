@@ -2,13 +2,13 @@ import React from 'react'
 
 export default function Contact() {
   return (
-    <section id="contact" className='pt-36 pb-32 bg-slate-100'>
+    <section id="contact" className='pt-36 pb-32 bg-white dark:bg-dark'>
         <div className='container'>
             <div className='w-full px-4'>
                 <div className='max-w-xl mx-auto text-center mb-16'>
-                    <h4 className='font-bold uppercase text-primary text-lg mb-3'>Kontak</h4>
-                    <h2 className='font-bold text-dark text-3xl mb-4'>Hubungi Saya</h2>
-                    <p className='font-medium text-base text-secondary'>Silahkan isi form di bawah ini jika anda ingin mengirim pesan kepada saya</p>
+                    <h4 className='font-bold uppercase text-primary text-4xl mb-3'>Kontak</h4>
+                    <h2 className='font-bold text-black dark:text-white text-3xl mb-4'>Hubungi Saya</h2>
+                    <p className='font-medium text-base text-black dark:text-white'>Silahkan isi form di bawah ini jika anda ingin mengirim pesan kepada saya</p>
                 </div>
             </div>
 

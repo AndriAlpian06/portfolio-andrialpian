@@ -2,6 +2,7 @@ const withMT = require("@material-tailwind/react/utils/withMT");
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  darkMode: 'class',
   theme: {
     container: {
       center: true,
@@ -11,12 +12,15 @@ module.exports = {
       colors: {
         primary : '#38bdf8',
         secondary: '#94a3b8',
-        dark: '#0f172a',
+        dark: '#111827',
       },
       screens: {
         '2xl': '1320px',
       }
     },
   },
-  plugins: [],
+  plugins: [require('daisyui')],
+  daisyui: {
+    themes: ["light", "dark"]
+  },
 }

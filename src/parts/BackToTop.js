@@ -26,7 +26,7 @@ function BackToTopButton () {
         {backToTopButton && (
         <button style={{
         position: 'fixed',
-        bottom: '50px',
+        bottom: '65px',
         right: '50px',
         height: '50px',
         width: '50px',
