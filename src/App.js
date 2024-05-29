@@ -1,6 +1,4 @@
 import './App.css';
-import About from './parts/About';
-import Header from './parts/Header';
 import Hero from './parts/Hero';
 import Navbar from './parts/Navbar';
 
