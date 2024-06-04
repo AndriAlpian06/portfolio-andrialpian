@@ -4,6 +4,7 @@ import portfolio2 from '../images/portfolio-2.png'
 import exprotates from '../images/exprotates.png'
 import gayeng from '../images/gayeng.png'
 import furnitueSecond from '../images/furniture-second.png'
+import wedding from '../images/wedding.png'
 
 export default function Portfolio() {
   return (
@@ -47,6 +48,13 @@ export default function Portfolio() {
                     </div>
                     <h3 className='font-semibold text-xl text-black dark:text-white mt-5 mb-3'>Website FURNITURE SECOND</h3>
                     <p className='font-medium text-base text-black dark:text-white'>website FURNITURE SECOND adalah sebuah web penjualan barang barang mebel seperti kursi, meja, lemari dan brankas. dan juga menyediakan service kursi, meja dll untuk mengetahui selengkapnya berikut link web nya <a href="https://furniture-second.netlify.app/" target='_blank' rel="noreferrer" className='text-blue-500'>https://furniture-second.netlify.app/</a></p>
+                </div>
+                <div className='mb-12 p-4 md:w-1/2'>
+                    <div className='rounded-md shadow-md overflow-hidden'>
+                        <img src={wedding} alt="" width="w-full"/>
+                    </div>
+                    <h3 className='font-semibold text-xl text-black dark:text-white mt-5 mb-3'>Website WEDDING</h3>
+                    <p className='font-medium text-base text-black dark:text-white'>Website pernikahan sering kali menjadi pusat informasi bagi pasangan yang akan menikah dan tamu yang akan menghadiri perayaan tersebut. Biasanya, website pernikahan berisi informasi tentang acara, detail lokasi, waktu, dan daftar hadiah. <a href="https://ex-wedding.netlify.app/" target='_blank' rel="noreferrer" className='text-blue-500'>https://furniture-second.netlify.app/</a></p>
                 </div>
                 <div className='mb-12 p-4 md:w-1/2'>
                     <div className='rounded-md shadow-md overflow-hidden'>
