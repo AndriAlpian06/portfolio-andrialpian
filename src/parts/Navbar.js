@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 import {Link as LinkScroll} from 'react-scroll'
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -66,78 +67,121 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <ul className="hidden text-lg lg:flex col-start-6 col-end-8 text-black font-semibold items-center uppercase">
-                    <LinkScroll
-                        activeClass="active"
-                        to="about"
-                        spy={true}
-                        smooth={true}
-                        duration={1000}
-                        onSetActive={() => {
-                        setActiveLink("about");
-                        }}
-                        className={
-                        "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative hover:border-b-2 hover:border-sky-500 w-auto" +
-                        (activeLink === "about"
-                            ? " text-sky-500 animation-active "
-                            : " text-black dark:text-white hover:text-sky-500")
-                        }
-                    >
-                        Tentang
-                    </LinkScroll>
-                    <LinkScroll
-                        activeClass="active"
-                        to="skills"
-                        spy={true}
-                        smooth={true}
-                        duration={1000}
-                        onSetActive={() => {
-                            setActiveLink("skills");
-                        }}
-                        className={
-                            "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative hover:border-b-2 hover:border-sky-500" +
-                            (activeLink === "skills"
-                            ? " text-sky-500 animation-active "
-                            : " text-black-500 dark:text-white hover:text-sky-500 ")
-                        }
+                    {activeLink !== 'blog' ? (
+                        <>
+                        <LinkScroll
+                            activeClass="active"
+                            to="about"
+                            spy={true}
+                            smooth={true}
+                            duration={1000}
+                            onSetActive={() => {
+                            setActiveLink("about");
+                            }}
+                            className={
+                            "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative hover:border-b-2 hover:border-sky-500 w-auto" +
+                            (activeLink === "about"
+                                ? " text-sky-500 animation-active "
+                                : " text-black dark:text-white hover:text-sky-500")
+                            }
                         >
-                        Keahlian
+                        Tentang
                         </LinkScroll>
-                    <LinkScroll
-                        activeClass="active"
-                        to="portfolio"
-                        spy={true}
-                        smooth={true}
-                        duration={1000}
-                        onSetActive={() => {
-                            setActiveLink("portfolio");
-                        }}
-                        className={
-                            "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative hover:border-b-2 hover:border-sky-500 w-auto" +
-                            (activeLink === "portfolio"
-                            ? " text-sky-500 animation-active "
-                            : " text-black dark:text-white hover:text-sky-500 ")
-                        }
+                        <LinkScroll
+                            activeClass="active"
+                            to="skills"
+                            spy={true}
+                            smooth={true}
+                            duration={1000}
+                            onSetActive={() => {
+                                setActiveLink("skills");
+                            }}
+                            className={
+                                "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative hover:border-b-2 hover:border-sky-500" +
+                                (activeLink === "skills"
+                                ? " text-sky-500 animation-active "
+                                : " text-black-500 dark:text-white hover:text-sky-500 ")
+                            }
+                        >
+                            Keahlian
+                        </LinkScroll>
+                        <LinkScroll
+                            activeClass="active"
+                            to="portfolio"
+                            spy={true}
+                            smooth={true}
+                            duration={1000}
+                            onSetActive={() => {
+                                setActiveLink("portfolio");
+                            }}
+                            className={
+                                "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative hover:border-b-2 hover:border-sky-500 w-auto" +
+                                (activeLink === "portfolio"
+                                ? " text-sky-500 animation-active "
+                                : " text-black dark:text-white hover:text-sky-500 ")
+                            }
+                        >
+                            Portfolio
+                        </LinkScroll>
+                        <LinkScroll
+                            activeClass="active"
+                            to="contact"
+                            spy={true}
+                            smooth={true}
+                            duration={1000}
+                            onSetActive={() => {
+                                setActiveLink("contact");
+                            }}
+                            className={
+                                "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative hover:border-b-2 hover:border-sky-500 w-auto" +
+                                (activeLink === "contact"
+                                ? " text-sky-500 animation-active "
+                                : " text-black dark:text-white hover:text-sky-500 ")
+                            }
+                        >
+                            Kontak
+                        </LinkScroll>
+                        </>
+                    ) : (
+                        <>
+                        <Link
+                            to="/"
+                            className={"px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative hover:border-b-2 hover:border-sky-500 w-auto" + (activeLink === "blog" ? " text-sky-500 animation-active " : " text-black dark:text-white hover:text-sky-500 ")}
+                            onClick={() => { setActiveLink("beranda"); }}
+                        >
+                            Tentang
+                        </Link>
+                        <Link
+                            to="/"
+                            className={"px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative hover:border-b-2 hover:border-sky-500 w-auto" + (activeLink === "blog" ? " text-sky-500 animation-active " : " text-black dark:text-white hover:text-sky-500 ")}
+                            onClick={() => { setActiveLink("beranda"); }}
+                        >
+                            Keahlian
+                        </Link>
+                        <Link
+                            to="/"
+                            className={"px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative hover:border-b-2 hover:border-sky-500 w-auto" + (activeLink === "blog" ? " text-sky-500 animation-active " : " text-black dark:text-white hover:text-sky-500 ")}
+                            onClick={() => { setActiveLink("beranda"); }}
+                        >
+                            Portfolio
+                        </Link>
+                        <Link
+                            to="/"
+                            className={"px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative hover:border-b-2 hover:border-sky-500 w-auto" + (activeLink === "blog" ? " text-sky-500 animation-active " : " text-black dark:text-white hover:text-sky-500 ")}
+                            onClick={() => { setActiveLink("beranda"); }}
+                        >
+                            Kontak
+                        </Link>
+                        </>
+                    )
+                    }
+                    <Link
+                        to="/blog"
+                        className={"px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative hover:border-b-2 hover:border-sky-500 w-auto" + (activeLink === "blog" ? " text-sky-500 animation-active " : " text-black dark:text-white hover:text-sky-500 ")}
+                        onClick={() => { setActiveLink("blog"); }}
                     >
-                        Portfolio
-                    </LinkScroll>
-                    <LinkScroll
-                        activeClass="active"
-                        to="contact"
-                        spy={true}
-                        smooth={true}
-                        duration={1000}
-                        onSetActive={() => {
-                            setActiveLink("contact");
-                        }}
-                        className={
-                            "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative hover:border-b-2 hover:border-sky-500 w-auto" +
-                            (activeLink === "contact"
-                            ? " text-sky-500 animation-active "
-                            : " text-black dark:text-white hover:text-sky-500 ")
-                        }
-                    >
-                        Kontak
-                    </LinkScroll>
+                        Blog
+                    </Link>
                 </ul>
                 <div className="col-start-10 col-end-12 font-medium flex justify-end items-center py-4">
                     <div className="flex pr-4 items-center">

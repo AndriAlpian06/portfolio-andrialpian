@@ -1,25 +1,27 @@
 import './App.css';
-import Hero from './parts/Hero';
-import Navbar from './parts/Navbar';
 
-import { Router, Routes, Route } from 'react-router-dom'
-import Portfolio from './parts/Portfolio';
-import Contact from './parts/Contact';
-import Footer from './parts/Footer';
-import Skills from './parts/Skills';
+import Navbar from './parts/Navbar';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Blog from './parts/Blog'
+
 import BackToTopButton from './parts/BackToTop';
+import Beranda from './parts/Beranda';
+import Footer from './parts/Footer';
 
 function App() {
   return (
-    <div>
+    <Router>
+      <div>
         <Navbar />
-        <Hero />
-        <Skills />
-        <Portfolio />
-        <Contact />
-        <Footer />
+        <Routes>
+          <Route path='/' element={<Beranda />}/>
+          <Route path='/blog' element={<Blog />} />
+        </Routes>
         <BackToTopButton />
-    </div>
+        <Footer />
+      </div>
+    </Router>
+    
   );
 }
 
